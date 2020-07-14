@@ -1,0 +1,51 @@
+List of python files and their functions (In the 'Source Code' folder) :
+
+1. networktraffic.py: Converts each text file into a dataframe and save it as a pickle file
+2. extractInformation.py : Generates a dictionary of area code vs total traffic over 2 months
+3. task1b.py: Plots the PDF of traffic intensities over the 2 month period
+4. task1c.py: Displays the plots of the time series traffic intensities over the first 14 day period
+5. task2a.py: Prepares the training set for the 3 areas
+6. task2b.py: Compiles and trains a common neural network for all 3 areas
+7. task2c.py: Performs predictions on the pre-built model and displays the predicted plots
+
+List of network models (In the 'Models' folder) :
+
+1. trafficmodel_4159.h5 : Neural network built on the training set of area 4159
+2. trafficmodel_5161.h5 : Neural network built on the training set of area 5161 (Area with highest total traffic)
+3. trafficmodel_4556.h5 : Neural network built on the training set of area 4556
+
+List of datasets for the neural network (In the 'Input Data' folder) :
+
+1. list4159_train.npy : X_train for training trafficmodel_4159.h5
+2. list4159_test.npy  : X_test for predicting from trafficmodel_4159.h5
+3. list4556_train.npy : X_train for training trafficmodel_4556.h5
+4. list4556_test.npy  : X_test for predicting from trafficmodel_4556.h5
+5. list5161_train.npy : X_train for training trafficmodel_5161.h5
+6. list5161_test.npy  : X_test for predicting from trafficmodel_5161.h5
+
+List of required dictionaries ((In the 'Input Data' folder) :
+
+1. areaModelDic  : Tuples containing the area code and its corresponding trained model
+2. areaTrafficDic: Tuples containing the area code and its corresponding 2 month total traffic intensity
+
+Instructions to run the prediction algorithm on Linux:
+
+1. Make sure the following files are present in the same folder : 
+a. areaModelDic.npy
+b. task2c.py
+c. trafficmodel_4159.h5
+d. trafficmodel_5161.h5
+e. trafficmodel_4556.h5
+f. list4159_test.npy
+g. list4556_test.npy
+h. list5161_test.npy
+
+2. Run the following line of code: python task2c.py <Area code>, where <Area code> can be replaced by either of the following: 4159,4556 or 5161. 
+(Entering an invalid code leads to an error message).
+
+3. The output must contain the printed MAE and MAPE, as well as the original and predicted plots saved in the format 'Original_<Area code>.png' and 
+   'Predicted_<Area code>.png'.
+
+
+
+
