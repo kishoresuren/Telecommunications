@@ -22,13 +22,18 @@ Call-out activity: activity proportional to the amount of issued calls inside a 
 Internet traffic activity: number of CDRs generated inside a given Square id during a given Time interval. The Internet traffic is initiated from the nation identified by the Country code;
 
 Tasks :
+
 a. A plot of the PDF, computed over 10,000 samples that each represent the total two-month traffic in one geographical area.
+
 b. Figures of the time series of network traffic during the first 2 weeks in 3 areas, namely:
 (i) the area with the highest total traffic during the two-month period,
 (ii) the area with Square id 4159, and
 (iii) the area with Square id 4556
+
 c. Build a LSTM based Neural network which takesi n a time series of previous traffic intensities and predicts the intensities for the week from December 16 to 22
+
 d. Three plots reporting the time series of the original traffic and predicted traffic in the week from December 16 to 22
+
 e. Mean Absolute Error (MAE) and the Mean Absolute Percentage Error (MAPE) computed for the time series corresponding to the above week
 
 
