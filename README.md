@@ -30,7 +30,7 @@ b. Figures of the time series of network traffic during the first 2 weeks in 3 a
 (ii) the area with Square id 4159, and
 (iii) the area with Square id 4556
 
-c. Build a LSTM based Neural network which takesi n a time series of previous traffic intensities and predicts the intensities for the week from December 16 to 22
+c. Build a LSTM based Neural network which takes in a time series of previous traffic intensities and predicts the intensities for the week from December 16 to 22
 
 d. Three plots reporting the time series of the original traffic and predicted traffic in the week from December 16 to 22
 
